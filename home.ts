@@ -309,6 +309,8 @@ const enviarProceso = (): void => {
  * Función que se encarga de ejecutar los procesos que están actualmente en la cola de espera.
  */
 const ejecutarProceso = (): void => {
+    if (!ejecutar)
+        ordenarProcesos();
     ejecutar = true;
 }
 

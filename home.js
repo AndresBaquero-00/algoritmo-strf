@@ -261,6 +261,8 @@ var enviarProceso = function () {
  * Función que se encarga de ejecutar los procesos que están actualmente en la cola de espera.
  */
 var ejecutarProceso = function () {
+    if (!ejecutar)
+        ordenarProcesos();
     ejecutar = true;
 };
 /**
