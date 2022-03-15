@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 600;
+}
+
+/** Formulario */
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 15px 0;
+    /*background-image: linear-gradient(to right, #0a4a41, #1a6e65, #29948c, #38bcb6, #47e5e4);*/
+    background-image: linear-gradient(to right, #d3f437, #c5f233, #b7f131, #a8ef2f, #98ed2f, #98ed2f, #98ed2f, #98ed2f, #a8ef2f, #b7f131, #c5f233, #d3f437);
+}
+
+fieldset {
+    display: inline-block;
+    padding: 8px;
+    border: none;
+}
+
+label {
+    display: block;
+    color: black;
+}
+
+input {
+    margin-top: 3px;
+    padding: 5px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+/** Botones */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    /*background-image: linear-gradient(to right, #0a4a41, #1a6e65, #29948c, #38bcb6, #47e5e4);*/
+    background-image: linear-gradient(to right, #d3f437, #c5f233, #b7f131, #a8ef2f, #98ed2f, #98ed2f, #98ed2f, #98ed2f, #a8ef2f, #b7f131, #c5f233, #d3f437);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+button:active {
+    background-color: rgb(160, 160, 160);
+}
+
+#bloque {
+    background-color: rgb(239, 239, 239);
+    border-radius: 20px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloque-chbx {
+    margin-right: 8px;
+}
+
+/** Contenido */
+.content {
+    width: 100%;
+}
+
+/** Semaforo */
+.semaforo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#rojo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#verde {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.rojo-activo {
+    background-color: rgb(255, 0, 0);
+}
+
+.rojo-inactivo {
+    background-color: rgb(30, 0, 0);
+}
+
+.verde-activo {
+    background-color: rgb(0, 220, 0);
+}
+
+.verde-inactivo {
+    background-color: rgb(0, 30, 0);
+}
+
+/** Tabla y diagrama */
+.resultados {
+    padding: 30px;
+    /*display: grid;
+    grid-template-columns: 40% 60%;*/
+}
+
+.diagrama {
+    margin-top: 20px;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#recta-numeros {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+#table-entrada {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#table-resultados {
+    width: 100%;
+    margin-top: 30px;
+}
+
+thead {
+    background-image: linear-gradient(to right, #d3f437, #c5f233, #b7f131, #a8ef2f, #98ed2f, #98ed2f, #98ed2f, #98ed2f, #a8ef2f, #b7f131, #c5f233, #d3f437);
+    color: black;
+}
+  
+td, th {
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #DDDDDD;
+}
+
+

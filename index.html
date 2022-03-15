@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Round Robin</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <fieldset id="left">
+                <label for="nproceso">Nombre del Proceso:</label>
+                <input type="text" id="nombre-proceso">
+            </fieldset>
+            <fieldset id="center">
+                <label for="tllegada">Tiempo de Llegada:</label>
+                <input type="number" id="tiempo-llegada">
+            </fieldset>
+            <fieldset id="right">
+                <label for="rafaga">Rafaga:</label>
+                <input type="number" name="rafaga" id="rafaga">
+            </fieldset>
+        </div>
+        <div class="buttons">
+            <button type="button" id="enviar">Enviar</button>
+            <!-- <label for="bloque" id="bloque"><input type="checkbox" name="bloque" id="bloque-chbx">En Bloque</label> -->
+            <button type="button" id="ejecutar">Ejecutar</button>
+            <button type="button" id="enviar-ejecutar">Enviar y Ejecutar</button>
+            <button type="button" disabled id="reanudar">Reanudar Proceso</button>
+            <button type="button" id="bloquear">Bloquear Proceso</button>
+        </div>
+        <div class="content">
+            <div class="semaforo">
+                <div id="rojo" class="rojo-activo"></div>
+                <div id="verde" class="verde-activo"></div>
+            </div>
+            <div class="resultados">
+                <div class="tabla">
+                    <table id="table-entrada">
+                        <thead>
+                            <tr>
+                                <th>Proceso</th>
+                                <th>Tiempo de Llegada</th>
+                                <th>Ráfaga</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="tabla">
+                    <table id="table-resultados">
+                        <thead>
+                            <tr>
+                                <th>Proceso</th>
+                                <th>Tiempo de Llegada</th>
+                                <th>Ráfaga</th>
+                                <th>Tiempo de Comienzo</th>
+                                <th>Tiempo Final</th>
+                                <th>Tiempo de Retorno</th>
+                                <th>Tiempo de Espera</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="diagrama">
+                    <canvas id="canvas" width="800px" height="400px"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
